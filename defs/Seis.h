@@ -31,6 +31,8 @@
 #define ERREUR_ACCEPTABLE_ACCELERATION		2	// en unité de l'accelerometre
 #define NB_PIEDS	3
 
+#define RACINE_CARREE_DE_TROIS 
+
 
 using namespace std;
 
@@ -72,6 +74,7 @@ private:
 	int DistanceMoyenne;
 	int _AlimenterDetecteurUltraSon(bool etat);
 	int lireDistance(int pied);
+        int positionsAtteintes;
 	int CanalService;
 	double SQR3;
 	string CRLF;

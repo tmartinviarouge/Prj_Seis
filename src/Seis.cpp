@@ -110,7 +110,7 @@ bool Seis::nivellement()
 }
 
 void Seis::determinerCorrectionPositions(int& correctionP1, int& correctionP2, int& correctionP3) {
-    accelerometre.MesurerAccel (&AcX, &AcY, &AcZ);
+    accelerometre.MesurerAccel(&AcX, &AcY, &AcZ);
     
     pthread_mutex_lock(&semTramesXYZ);
     pthread_cond_wait(&SignalNouvellesMesuresXYZ, &semTramesXYZ);
@@ -125,6 +125,29 @@ void Seis::determinerCorrectionPositions(int& correctionP1, int& correctionP2, i
 
 bool Seis::positionnerPieds(int consP1, int  consP2, int consP3) 
 {
+    positionsAtteintes = true;
+    if ((0 <= consP1) && (consP1 <= POSIITON_MAX)) {
+        Pied1.consignerPied(consP1);
+    }
+    if ((0<=consP2) && (consP1 <= POSITION_MAX)) {
+        Pied1.consignerPied(consP1);
+    }
+    if ((0<=consP3) && (consP3 <= POSITION_MAX)) {
+        Pied1.consignerPied(consP3);
+    }
+    if (Pied1.attendreFinMouvementAvecSucces() == false)
+    {
+        positionsAtteintes = false;
+    }
+    if (Pied2.attendreFinMouvementAvecSucces() == false)
+    {
+        positionsAtteintes = false;
+    }
+    if (Pied3.attendreFinMouvementAvecSucces() == false)
+    {
+        positionsAtteintes = false;
+    }
+    return positionsAtteintes;
     
 }
 
