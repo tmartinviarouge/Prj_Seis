@@ -105,28 +105,44 @@ bool Seis::nivellement()
         distanceSol[P1] = distanceSol[P1] + correctionP1;
         distanceSol[P2] = distanceSol[P2] + correctionP2;
         distanceSol[P3] = distanceSol[P3] + correctionP3;        
-    } while ((incident == false) && (correctionP1 <> 0) && (correctionP1 <> 0) && (correctionP1 <> 0));
+    } while ((incident == false) && ((correctionP1 <> 0) || (correctionP2 <> 0) || (correctionP3 <> 0)));
     return incident;
+       
+}
+
+bool Seis::testPosition()
+{
+    
+    accelerometre.MesurerAccel(Ax, Ay, Az);
+    Pied1->consignerPied(100);
+    if (Az <= VARIATION_ACCEL) {
+        return false;
+    }
+    else {
+        return true;
+    }
+    
+    
 }
 
 void Seis::determinerCorrectionPositions(int& correctionP1, int& correctionP2, int& correctionP3) {
     accelerometre.MesurerAccel(&AcX, &AcY, &AcZ);
     
     pthread_mutex_lock(&semTramesXYZ);
-    pthread_cond_wait(&SignalNouvellesMesuresXYZ, &semTramesXYZ);
+    pthread_cond_wait(&SignalNouvellesMesure, &semSynchroMesure);
     pthread_mutex_unlock(&semTramesXYZ);
     correctionP1 = (Ax * RAYON)/ G_TERRE;
     int Aysqrt3 = (RACINE_CARREE_DE_TROIS * Ay);
     correctionP2 = (RAYON * (Aysqrt3 - Ax)) / G_TERRE;
     correctionP3 = -(RAYON * (Aysqrt3 + Ax)) /G_TERRE;
-    
-    
+        
+       
 }
 
 bool Seis::positionnerPieds(int consP1, int  consP2, int consP3) 
 {
     positionsAtteintes = true;
-    if ((0 <= consP1) && (consP1 <= POSIITON_MAX)) {
+    if ((0 <= consP1) && (consP1 <= POSITION_MAX)) {
         Pied1.consignerPied(consP1);
     }
     if ((0<=consP2) && (consP1 <= POSITION_MAX)) {

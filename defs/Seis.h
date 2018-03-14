@@ -32,6 +32,7 @@
 #define NB_PIEDS	3
 
 #define RACINE_CARREE_DE_TROIS 
+#define VARIATION_ACCEL                         50  // à confirmer
 
 
 using namespace std;
@@ -45,7 +46,9 @@ public:
 
     pthread_mutex_t semSynchroMesure;
     pthread_cond_t SignalMesure;
-
+    pthread_mutex_t semTramesXYZ;
+    pthread_cond_t SignalNouvellesMesure;
+    
     void initTimerMesures();
     void attenteCmds();
     void surveillerTemperature();
@@ -57,6 +60,7 @@ public:
     void determinerCorrectionPositions(int & correctionP1, int & correctionP2, int & correctionP3);
     int repliement();
     bool positionnerPieds(int consP1, int  consP2, int consP3);
+    bool testPosition();
 
     // méthodes pour la mainteanance
     int sortirPiedDe(int pied0,int pied1,int pied2 );
@@ -78,6 +82,9 @@ private:
 	int CanalService;
 	double SQR3;
 	string CRLF;
+        int Ax, Ay, Az;
+                
+        
 
 };
 
