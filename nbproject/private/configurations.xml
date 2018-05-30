@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="defs">
+        <in>ADS1115.h</in>
+        <in>Buzzer.h</in>
+        <in>CmdShell.h</in>
+        <in>GPIOSEIS.h</in>
+        <in>MPU6050.h</in>
+        <in>Pied.h</in>
+        <in>Seis.cpp</in>
+        <in>Seis.h</in>
+        <in>Superviseur.h</in>
+        <in>Temperature.h</in>
+        <in>Ultrason.h</in>
+        <in>c_socket.3.3.h</in>
+        <in>gestionnaireAlarme.h</in>
+        <in>recepteurCmdShell.h</in>
+        <in>sockets.h</in>
+      </df>
+      <df name="lib">
+      </df>
+      <df name="ProjetSeis">
+        <in>main.cpp</in>
+      </df>
+      <df name="src">
+        <in>ADS1115.cpp</in>
+        <in>Buzzer.cpp</in>
+        <in>CmdShell.cpp</in>
+        <in>MPU6050.cpp</in>
+        <in>Pied.cpp</in>
+        <in>Seis.cpp</in>
+        <in>Superviseur.cpp</in>
+        <in>Temperature.cpp</in>
+        <in>Ultrason.cpp</in>
+        <in>c_socket.3.3.cpp</in>
+        <in>gestionnaireAlarme.cpp</in>
+        <in>mainB.cpp</in>
+        <in>mainBuzzer.cpp</in>
+        <in>recepteurCmdShell.cpp</in>
+        <in>testApproche.cpp</in>
+      </df>
+      <df name="Tests">
+        <df name="testAccelerometre">
+          <df name="apres">
+            <in>main.cpp</in>
+          </df>
+          <in>main.cpp</in>
+          <in>mainB.cpp</in>
+        </df>
+        <df name="testBuzzer">
+          <in>test.cpp</in>
+          <in>testApprocheAlarme.cpp</in>
+        </df>
+        <df name="testCAN">
+          <in>testADS1115.cpp</in>
+          <in>testHomogeneSurEntrees.cpp</in>
+        </df>
+        <df name="testGestionnaireAlarmes">
+          <in>mainBuzzer.cpp</in>
+          <in>test.cpp</in>
+          <in>testApprocheAlarme.cpp</in>
+        </df>
+        <df name="TestPieds">
+          <in>test.cpp</in>
+          <in>testPied.cpp</in>
+          <in>yolo.cpp</in>
+        </df>
+        <df name="TestPontH">
+          <df name="TestStub">
+            <df name="defs">
+              <in>testSeis.h</in>
+              <in>testStub.h</in>
+            </df>
+            <df name="src">
+              <in>testStub.cpp</in>
+            </df>
+            <in>MainTestStub.cpp</in>
+            <in>testSeis.cpp</in>
+          </df>
+          <in>comHPont.cpp</in>
+        </df>
+        <df name="Tests">
+          <df name="testAccelerometre">
+            <df name="apres">
+              <in>main.cpp</in>
+            </df>
+            <in>main.cpp</in>
+          </df>
+          <df name="testBuzzer">
+            <in>test.cpp</in>
+            <in>testApprocheAlarme.cpp</in>
+          </df>
+          <df name="testCAN">
+            <in>testADS1115.cpp</in>
+            <in>testHomogeneSurEntrees.cpp</in>
+          </df>
+          <df name="testGestionnaireAlarmes">
+            <in>mainBuzzer.cpp</in>
+          </df>
+          <df name="TestPieds">
+            <in>testPied.cpp</in>
+          </df>
+          <df name="TestPontH">
+            <in>comHPont.cpp</in>
+          </df>
+          <df name="testSeis">
+            <in>test.cpp</in>
+          </df>
+          <df name="TestStub">
+            <df name="defs">
+              <in>testSeis.h</in>
+              <in>testStub.h</in>
+            </df>
+            <df name="src">
+              <in>testStub.cpp</in>
+            </df>
+            <in>MainTestStub.cpp</in>
+            <in>testSeis.cpp</in>
+          </df>
+          <df name="testTempérature">
+            <in>Temperature.cpp</in>
+            <in>Temperature.h</in>
+            <in>main.cpp</in>
+            <in>mainTemperature.cpp</in>
+          </df>
+          <df name="testUltrason">
+            <df name="defs">
+              <in>GPIOSEIS.h</in>
+              <in>MMA8452.h</in>
+              <in>PiedSeis.h</in>
+              <in>Seis.h</in>
+              <in>Ultrason.h</in>
+              <in>faux_wiringPi.h</in>
+              <in>rPi2_rPi+.h</in>
+              <in>sockets.h</in>
+            </df>
+            <df name="src">
+              <in>Ultrason.cpp</in>
+              <in>determinerDistance.cpp</in>
+              <in>faireUneMesure.cpp</in>
+            </df>
+            <df name="TEST">
+              <in>Ultrason.cpp</in>
+              <in>main.cpp</in>
+            </df>
+            <df name="wiringPi">
+            </df>
+          </df>
+        </df>
+        <df name="testSeis">
+          <in>test.cpp</in>
+        </df>
+        <df name="TestStub">
+          <df name="defs">
+            <in>testSeis.h</in>
+            <in>testStub.h</in>
+          </df>
+          <df name="src">
+            <in>testStub.cpp</in>
+          </df>
+          <in>MainTestStub.cpp</in>
+          <in>testSeis.cpp</in>
+          <in>testStub.cpp</in>
+        </df>
+        <df name="testTempérature">
+          <in>Temperature.cpp</in>
+          <in>Temperature.h</in>
+          <in>main.cpp</in>
+          <in>mainTemperature.cpp</in>
+        </df>
+        <df name="testUltrason">
+          <df name="defs">
+            <in>GPIOSEIS.h</in>
+            <in>MMA8452.h</in>
+            <in>PiedSeis.h</in>
+            <in>Seis.h</in>
+            <in>Ultrason.h</in>
+            <in>faux_wiringPi.h</in>
+            <in>rPi2_rPi+.h</in>
+            <in>sockets.h</in>
+          </df>
+          <df name="src">
+            <in>Ultrason.cpp</in>
+            <in>determinerDistance.cpp</in>
+            <in>faireUneMesure.cpp</in>
+          </df>
+          <df name="TEST">
+            <in>Ultrason.cpp</in>
+            <in>main.cpp</in>
+          </df>
+          <df name="wiringPi">
+            <df name="debian">
+            </df>
+            <df name="debian-template">
+              <df name="wiringPi">
+                <df name="DEBIAN">
+                </df>
+              </df>
+            </df>
+            <df name="devLib">
+              <in>ds1302.c</in>
+              <in>ds1302.h</in>
+              <in>font.h</in>
+              <in>gertboard.c</in>
+              <in>gertboard.h</in>
+              <in>lcd.c</in>
+              <in>lcd.h</in>
+              <in>lcd128x64.c</in>
+              <in>lcd128x64.h</in>
+              <in>maxdetect.c</in>
+              <in>maxdetect.h</in>
+              <in>piFace.c</in>
+              <in>piFace.h</in>
+              <in>piFaceOld.c</in>
+              <in>piGlow.c</in>
+              <in>piGlow.h</in>
+              <in>piNes.c</in>
+              <in>piNes.h</in>
+              <in>scrollPhat.c</in>
+              <in>scrollPhat.h</in>
+              <in>scrollPhatFont.h</in>
+            </df>
+            <df name="examples">
+              <df name="Gertboard">
+                <in>7segments.c</in>
+                <in>buttons.c</in>
+                <in>gertboard.c</in>
+                <in>record.c</in>
+                <in>temperature.c</in>
+                <in>voltmeter.c</in>
+                <in>vumeter.c</in>
+              </df>
+              <df name="PiFace">
+                <in>blink.c</in>
+                <in>buttons.c</in>
+                <in>ladder.c</in>
+                <in>metro.c</in>
+                <in>motor.c</in>
+                <in>reaction.c</in>
+              </df>
+              <df name="PiGlow">
+                <in>piGlow0.c</in>
+                <in>piGlow1.c</in>
+                <in>piglow.c</in>
+              </df>
+              <df name="q2w">
+                <in>binary.c</in>
+                <in>blink-io.c</in>
+                <in>blink.c</in>
+                <in>bright.c</in>
+                <in>button.c</in>
+                <in>volts.c</in>
+              </df>
+              <df name="scrollPhat">
+                <in>scphat.c</in>
+                <in>test.c</in>
+              </df>
+              <in>blink.c</in>
+              <in>blink12.c</in>
+              <in>blink12drcs.c</in>
+              <in>blink6drcs.c</in>
+              <in>blink8-drcn.c</in>
+              <in>blink8.c</in>
+              <in>clock.c</in>
+              <in>delayTest.c</in>
+              <in>ds1302.c</in>
+              <in>header.h</in>
+              <in>isr-osc.c</in>
+              <in>isr.c</in>
+              <in>lcd-adafruit.c</in>
+              <in>lcd.c</in>
+              <in>lowPower.c</in>
+              <in>max31855.c</in>
+              <in>nes.c</in>
+              <in>okLed.c</in>
+              <in>pwm.c</in>
+              <in>rht03.c</in>
+              <in>serialRead.c</in>
+              <in>serialTest.c</in>
+              <in>servo.c</in>
+              <in>softPwm.c</in>
+              <in>softTone.c</in>
+              <in>speed.c</in>
+              <in>spiSpeed.c</in>
+              <in>wfi.c</in>
+            </df>
+            <df name="gpio">
+              <in>gpio.c</in>
+              <in>pins.c</in>
+              <in>readall.c</in>
+            </df>
+            <df name="pins">
+            </df>
+            <df name="wiringPi">
+              <in>ads1115.c</in>
+              <in>ads1115.h</in>
+              <in>bmp180.c</in>
+              <in>bmp180.h</in>
+              <in>drcNet.c</in>
+              <in>drcNet.h</in>
+              <in>drcSerial.c</in>
+              <in>drcSerial.h</in>
+              <in>ds18b20.c</in>
+              <in>ds18b20.h</in>
+              <in>htu21d.c</in>
+              <in>htu21d.h</in>
+              <in>max31855.c</in>
+              <in>max31855.h</in>
+              <in>max5322.c</in>
+              <in>max5322.h</in>
+              <in>mcp23008.c</in>
+              <in>mcp23008.h</in>
+              <in>mcp23016.c</in>
+              <in>mcp23016.h</in>
+              <in>mcp23016reg.h</in>
+              <in>mcp23017.c</in>
+              <in>mcp23017.h</in>
+              <in>mcp23s08.c</in>
+              <in>mcp23s08.h</in>
+              <in>mcp23s17.c</in>
+              <in>mcp23s17.h</in>
+              <in>mcp23x08.h</in>
+              <in>mcp23x0817.h</in>
+              <in>mcp3002.c</in>
+              <in>mcp3002.h</in>
+              <in>mcp3004.c</in>
+              <in>mcp3004.h</in>
+              <in>mcp3422.c</in>
+              <in>mcp3422.h</in>
+              <in>mcp4802.c</in>
+              <in>mcp4802.h</in>
+              <in>pcf8574.c</in>
+              <in>pcf8574.h</in>
+              <in>pcf8591.c</in>
+              <in>pcf8591.h</in>
+              <in>piHiPri.c</in>
+              <in>piThread.c</in>
+              <in>pseudoPins.c</in>
+              <in>pseudoPins.h</in>
+              <in>rht03.c</in>
+              <in>rht03.h</in>
+              <in>sn3218.c</in>
+              <in>sn3218.h</in>
+              <in>softPwm.c</in>
+              <in>softPwm.h</in>
+              <in>softServo.c</in>
+              <in>softServo.h</in>
+              <in>softTone.c</in>
+              <in>softTone.h</in>
+              <in>sr595.c</in>
+              <in>sr595.h</in>
+              <in>wiringPi.c</in>
+              <in>wiringPi.h</in>
+              <in>wiringPiI2C.c</in>
+              <in>wiringPiI2C.h</in>
+              <in>wiringPiSPI.c</in>
+              <in>wiringPiSPI.h</in>
+              <in>wiringSerial.c</in>
+              <in>wiringSerial.h</in>
+              <in>wiringShift.c</in>
+              <in>wiringShift.h</in>
+              <in>wpiExtensions.c</in>
+              <in>wpiExtensions.h</in>
+            </df>
+            <df name="wiringPiD">
+              <in>daemonise.c</in>
+              <in>daemonise.h</in>
+              <in>drcNetCmd.h</in>
+              <in>network.c</in>
+              <in>network.h</in>
+              <in>runRemote.c</in>
+              <in>runRemote.h</in>
+              <in>wiringpid.c</in>
+            </df>
+            <in>version.h</in>
+          </df>
+        </df>
+        <in>testMesure.cpp</in>
+        <in>testMesures.c</in>
+      </df>
+      <in>CmdShell.cpp</in>
+      <in>CmdShell.h</in>
+      <in>RecepteurRmdShell.cpp</in>
+      <in>RecepteurRmdShell.h</in>
+      <in>Superviseur.cpp</in>
+      <in>Superviseur.h</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

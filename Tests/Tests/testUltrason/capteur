@@ -1,0 +1,5 @@
+rm iron
+g++ main.cpp Ultrason.cpp -o iron -lwiringPi
+./iron
+
+
